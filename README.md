@@ -11,7 +11,7 @@ ESLint es una herramienta de linting para JavaScript que ayuda a identificar y c
    - ESLint analiza el código en busca de errores, problemas de estilo y posibles vulnerabilidades.
    - Ayuda a prevenir errores comunes antes de que lleguen a ejecutarse, mejorando la calidad del código.
   
-   ![descarga](https://github.com/OscarBGrandeG/style_guide/assets/98411972/c20908e1-c84a-478c-a8b2-489a7369a0a8)
+   ![descarga](https://github.com/OscarBGrandeG/style_guide/assets/98411972/c20908e1-c84a-478c-a8b2-489a7369a0a8 | width=200)
 
 
 3. **Consistencia en el Estilo de Código:**
@@ -22,20 +22,20 @@ ESLint es una herramienta de linting para JavaScript que ayuda a identificar y c
    - Al seguir un conjunto común de reglas, ESLint facilita la colaboración entre miembros del equipo.
    - Reduce las discusiones sobre el estilo de código durante revisiones de código.
   
-     ![peterp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/4eb3d5f5-cb4a-41f0-baea-670f8fc59078)
+     ![peterp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/4eb3d5f5-cb4a-41f0-baea-670f8fc59078 | width=200)
 
 
 5. **Mejora la Legibilidad del Código:**
    - Al identificar y corregir problemas de estilo, ESLint contribuye a mejorar la legibilidad del código.
    - Un código más legible facilita el mantenimiento y la comprensión del mismo.
   
-   ![esoagueti](https://github.com/OscarBGrandeG/style_guide/assets/98411972/6343c700-34e0-4040-973c-ae2ed351b51b)
+   ![esoagueti](https://github.com/OscarBGrandeG/style_guide/assets/98411972/6343c700-34e0-4040-973c-ae2ed351b51b | width=200)
 
 6. **Aumenta la Eficiencia del Desarrollo:**
    - Detecta problemas de forma temprana, reduciendo la cantidad de errores que se pueden introducir en el código.
    - Mejora la eficiencia del desarrollo al proporcionar retroalimentación rápida sobre posibles problemas.
   
-     ![images](https://github.com/OscarBGrandeG/style_guide/assets/98411972/322311be-1827-474c-a752-a743989271db)
+     ![images](https://github.com/OscarBGrandeG/style_guide/assets/98411972/322311be-1827-474c-a752-a743989271db | width=200)
 
 
 7. **Configuración Personalizada:**
