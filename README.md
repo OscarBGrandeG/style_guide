@@ -63,7 +63,7 @@ o
 yarn add eslint --dev
 ```
 
-## Paso 2: Crea un archivo de configuración .eslintrc.js en la raíz de tu proyecto. Puedes utilizar un archivo de configuración predeterminado o personalizarlo 
+**Paso 2: Crea un archivo de configuración .eslintrc.js en la raíz de tu proyecto. Puedes utilizar un archivo de configuración predeterminado o personalizarlo**
 
 ```bash
 Ejemplo de archivo .eslintrc.js
@@ -73,7 +73,7 @@ module.exports = {
 };
 ```
 
-## Paso 3: Añade los siguientes scripts a tu archivo package.json para ejecutar ESLint
+**Paso 3: Añade los siguientes scripts a tu archivo package.json para ejecutar ESLint**
 
 ```bash
 "scripts": {
@@ -82,13 +82,13 @@ module.exports = {
 }
 ```
 
-## Paso 4: Añade los siguientes scripts a tu archivo package.json para ejecutar ESLint
+**Paso 4: Añade los siguientes scripts a tu archivo package.json para ejecutar ESLint**
 
 - Instala la extensión ESLint para tu editor de código.
 
 ![Captura de pantalla 2023-11-21 a la(s) 11 41 55](https://github.com/OscarBGrandeG/style_guide/assets/98411972/ce14718e-5c2f-47a8-b2e7-bbd57e36076f)
 
-## Paso 5: Ejecutar ESLint
+**Paso 5: Ejecutar ESLint**
 
 ```bash
 npm run lint
@@ -100,3 +100,197 @@ npm run lint:fix
 o
 yarn lint:fix
 ```
+
+#Aquí te dejo unas reglas básicas de ESLint para React
+
+```bash
+Reglas Básicas para React:
+
+module.exports = {
+  extends: ['eslint-config-react-app'],
+  rules: {
+    // Aquí puedes agregar reglas específicas para tu proyecto React
+  },
+};
+
+Evitar el Uso de console en Producción:
+
+rules: {
+  'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+}
+
+Evitar el Uso de alert:
+
+rules: {
+  'no-alert': 'error',
+}
+
+Evitar Variables No Utilizadas:
+
+rules: {
+  'no-unused-vars': 'warn',
+}
+
+Limitar la Longitud de las Líneas:
+
+rules: {
+  'max-len': ['warn', { code: 80, ignoreUrls: true }],
+}
+
+Usar Punto y Coma:
+
+rules: {
+  semi: ['error', 'always'],
+}
+
+Indentación de Dos Espacios:
+
+rules: {
+  indent: ['error', 2],
+}
+
+Ordenar las Importaciones de React:
+
+rules: {
+  'react/jsx-uses-react': 'error',
+  'react/jsx-uses-vars': 'error',
+}
+```
+
+
+#Evitar Anti-Patrones y Malas Prácticas
+
+```bash
+Evitar el Uso Directo de setState en Funciones Asíncronas:
+
+// Anti-patrón
+async function fetchData() {
+  const data = await fetchDataFromAPI();
+  this.setState({ data });
+}
+
+// Mejor práctica
+async fetchData() {
+  const data = await fetchDataFromAPI();
+  if (this._isMounted) {
+    this.setState({ data });
+  }
+}
+
+componentDidMount() {
+  this._isMounted = true;
+}
+
+componentWillUnmount() {
+  this._isMounted = false;
+}
+
+
+Evitar el Uso de index como Key en Listas:
+
+// Anti-patrón
+{items.map((item, index) => (
+  <MyComponent key={index} data={item} />
+))}
+
+// Mejor práctica
+{items.map((item) => (
+  <MyComponent key={item.id} data={item} />
+))}
+
+Evitar el Uso de dangerouslySetInnerHTML:
+
+// Anti-patrón
+function MyComponent({ htmlContent }) {
+  return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
+}
+
+
+// Mejor práctica
+function MyComponent({ htmlContent }) {
+  return <div>{ReactHtmlParser(htmlContent)}</div>;
+}
+
+Evitar el Uso de any en TypeScript sin Justificación:
+
+
+// Anti-patrón
+const variable: any = "Hola, soy de tipo 'any'.";
+
+
+// Mejor práctica
+const variable: string = "Hola, soy de tipo 'string'.";
+
+
+Evitar Lógica Compleja en el Render:
+
+// Anti-patrón
+function MyComponent({ data }) {
+  return (
+    <div>
+      {data && data.length > 0 && (
+        <ul>
+          {data.map((item) => (
+            <li key={item.id}>{item.name}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+// Mejor práctica
+function MyComponent({ data }) {
+  const hasData = data && data.length > 0;
+
+  return (
+    <div>
+      {hasData && (
+        <ul>
+          {data.map((item) => (
+            <li key={item.id}>{item.name}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+```
+
+#Herramientas Adicionales
+
+1. **Prettier**
+   ```bash
+   npm install --save-dev prettier
+   o
+   yarn add --dev prettier
+   ```
+   - Te puedes apoyar del plugin que te proporciona Visual Studio Code
+   ![Captura de pantalla 2023-11-21 a la(s) 12 06 18](https://github.com/OscarBGrandeG/style_guide/assets/98411972/b805b044-7b3e-4d85-b0ed-d9f795caf81e)
+
+2. **Husky y lint-staged**
+   ```bash
+   npm install --save-dev husky lint-staged
+   o
+   yarn add --dev husky lint-staged
+   ```
+   - Agrega configuración en tu package.json
+   ```bash
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "linters": {
+          "src/**/*.{js,jsx}": ["eslint --fix", "git add"]
+        }
+      }
+   ```
+     
+3. **React DevTools**
+   - React DevTools es una extensión del navegador que te permite inspeccionar y depurar tus componentes React en el navegador (es una extensión de Chrome).
+
+4. **Jest**
+   -  Es un framework de prueba que se utiliza comúnmente en proyectos React. Se integra bien con React y proporciona funciones como pruebas unitarias, cobertura de código y pruebas de componentes.
+
