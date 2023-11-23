@@ -266,7 +266,7 @@ function MyComponent({ data }) {
    yarn add --dev prettier
    ```
    - Te puedes apoyar del plugin que te proporciona Visual Studio Code
-   ![Captura de pantalla 2023-11-21 a la(s) 12 06 18](https://github.com/OscarBGrandeG/style_guide/assets/98411972/b805b044-7b3e-4d85-b0ed-d9f795caf81e)
+      ![Captura de pantalla 2023-11-21 a la(s) 12 06 18](https://github.com/OscarBGrandeG/style_guide/assets/98411972/b805b044-7b3e-4d85-b0ed-d9f795caf81e)
 
 2. **Husky y lint-staged**
    ```bash
@@ -293,4 +293,6 @@ function MyComponent({ data }) {
 
 4. **Jest**
    -  Es un framework de prueba que se utiliza comúnmente en proyectos React. Se integra bien con React y proporciona funciones como pruebas unitarias, cobertura de código y pruebas de componentes.
+
+
 
