@@ -272,32 +272,32 @@ function MyComponent({ data }) {
      - 5. Configuración Personalizable
      - 6. Integración con Procesos de Construcción y CI/CD
 
-   **Ejemplo**
+    **Ejemplo**
 
-```bash
-{
-  "semi": false, // No añadir punto y coma al final de las declaraciones
-  "singleQuote": true, // Utilizar comillas simples en lugar de comillas dobles
-  "tabWidth": 4, // Tamaño de la tabulación
-  "useTabs": false, // Utilizar espacios en lugar de tabulaciones
-  "printWidth": 120, // Ancho máximo de línea
-  "arrowParens": "always", // Incluir paréntesis alrededor de los argumentos de las funciones de flecha
-  "bracketSpacing": true, // Añadir espacios alrededor de los corchetes en objetos
-  "jsxBracketSameLine": false, // Colocar el corchete de cierre JSX en una nueva línea
-  "jsxSingleQuote": false, // Utilizar comillas simples en JSX
-  "quoteProps": "as-needed", // Añadir comillas solo cuando sea necesario en los nombres de las propiedades de los objetos
-  "trailingComma": "all", // Añadir una coma al final de las listas y objetos
-  "endOfLine": "auto" // Utilizar saltos de línea UNIX o Windows automáticamente
-}
-```
+    ```bash
+    {
+      "semi": false, // No añadir punto y coma al final de las declaraciones
+      "singleQuote": true, // Utilizar comillas simples en lugar de comillas dobles
+      "tabWidth": 4, // Tamaño de la tabulación
+      "useTabs": false, // Utilizar espacios en lugar de tabulaciones
+      "printWidth": 120, // Ancho máximo de línea
+      "arrowParens": "always", // Incluir paréntesis alrededor de los argumentos de las funciones de flecha
+      "bracketSpacing": true, // Añadir espacios alrededor de los corchetes en objetos
+      "jsxBracketSameLine": false, // Colocar el corchete de cierre JSX en una nueva línea
+      "jsxSingleQuote": false, // Utilizar comillas simples en JSX
+      "quoteProps": "as-needed", // Añadir comillas solo cuando sea necesario en los nombres de las propiedades de los objetos
+      "trailingComma": "all", // Añadir una coma al final de las listas y objetos
+      "endOfLine": "auto" // Utilizar saltos de línea UNIX o Windows automáticamente
+    }
+    ```
 
-**Instalación**
+    **Instalación**
 
-```bash
-  npm install --save-dev prettier
-  o
-  yarn add --dev prettier
-```
+  ```bash
+    npm install --save-dev prettier
+    o
+    yarn add --dev prettier
+  ```
 
 - Te puedes apoyar del plugin que te proporciona Visual Studio Code
   ![Captura de pantalla 2023-11-21 a la(s) 12 06 18](https://github.com/OscarBGrandeG/style_guide/assets/98411972/b805b044-7b3e-4d85-b0ed-d9f795caf81e)
@@ -331,115 +331,115 @@ function MyComponent({ data }) {
 
 4. **VSCode setting.json**
 
-- El archivo settings.json es un archivo de configuración que te permite personalizar y ajustar diversos aspectos del entorno de desarrollo.
+   - El archivo settings.json es un archivo de configuración que te permite personalizar y ajustar diversos aspectos del entorno de desarrollo.
 
-```bash
-{
-  // =======================
-  // Apariencia y Comportamiento
-  // =======================
-  "tabnine.experimentalAutoImports": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Atom One Dark",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "editor.tabSize": 2,
-  "editor.fontSize": 14,
-  "window.restoreFullscreen": true,
-  "workbench.editor.tabSizing": "shrink",
-  "breadcrumbs.enabled": false,
-  "explorer.openEditors.visible": 0,
-  "editor.tabCompletion": "on",
-  "editor.cursorBlinking": "phase",
-  // =======================
-  // Búsqueda y Exclusión
-  // =======================
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/*.code-search": true,
-    "ios/": true,
-    "android/": true,
-    "dist/": true,
-    "yarn.lock": true,
-    "package-lock.json": true,
-    ".gitignore": true,
-    ".expo": true,
-    ".vscode": true
-  },
-  // =======================
-  // Prettier y Formateo
-  // =======================
-  "javascript.validate.enable": false,
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": true,
-  "prettier.trailingComma": "none",
-  "prettier.arrowParens": "avoid",
-  "prettier.proseWrap": "preserve",
-  "prettier.quoteProps": "as-needed",
-  "prettier.bracketSpacing": true,
-  "prettier.tabWidth": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // =======================
-  // Lenguajes Específicos
-  // =======================
-  "[markdown]": {
-    "editor.quickSuggestions": {
-      "comments": "on",
-      "strings": "on",
-      "other": "on"
-    }
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  ```bash
+  {
+    // =======================
+    // Apariencia y Comportamiento
+    // =======================
+    "tabnine.experimentalAutoImports": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "window.restoreFullscreen": true,
+    "workbench.editor.tabSizing": "shrink",
+    "breadcrumbs.enabled": false,
+    "explorer.openEditors.visible": 0,
+    "editor.tabCompletion": "on",
+    "editor.cursorBlinking": "phase",
+    // =======================
+    // Búsqueda y Exclusión
+    // =======================
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/*.code-search": true,
+      "ios/": true,
+      "android/": true,
+      "dist/": true,
+      "yarn.lock": true,
+      "package-lock.json": true,
+      ".gitignore": true,
+      ".expo": true,
+      ".vscode": true
+    },
+    // =======================
+    // Prettier y Formateo
+    // =======================
+    "javascript.validate.enable": false,
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.trailingComma": "none",
+    "prettier.arrowParens": "avoid",
+    "prettier.proseWrap": "preserve",
+    "prettier.quoteProps": "as-needed",
+    "prettier.bracketSpacing": true,
+    "prettier.tabWidth": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // =======================
+    // Lenguajes Específicos
+    // =======================
+    "[markdown]": {
+      "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+      }
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "security.workspace.trust.banner": "never",
-  "emmet.includeLanguages": {
-    "typescript": "typescriptreact",
-    "javascript": "javascriptreact"
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.tsserver.log": "off",
-  // =======================
-  // ESLint y Validación
-  // =======================
-  "eslint.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ]
-}
-```
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "security.workspace.trust.banner": "never",
+    "emmet.includeLanguages": {
+      "typescript": "typescriptreact",
+      "javascript": "javascriptreact"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsserver.log": "off",
+    // =======================
+    // ESLint y Validación
+    // =======================
+    "eslint.enable": true,
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ]
+  }
+  ```
 
 # Material de apoyo (buena practicas)
 
