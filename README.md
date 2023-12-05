@@ -261,7 +261,7 @@ function MyComponent({ data }) {
 }
 ```
 
-##Herramientas Adicionales
+## Herramientas Adicionales
 
 ![homersino](https://github.com/OscarBGrandeG/style_guide/assets/98411972/8072e1b8-a63f-4198-8582-0e0e826573ce)
 
