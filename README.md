@@ -55,7 +55,7 @@ En resumen, ESLint es una herramienta esencial ya que contribuye a la calidad de
 
 # Configuración de ESLint en Proyectos ReactJS
 
-## Paso 1: Instalar ESLint
+**Paso 1: Instalar ESLint
 
 Para instalar ESLint en tu proyecto, ejecuta el siguiente comando en la terminal:
 
@@ -106,7 +106,7 @@ yarn lint:fix
 ```
 ![elmoexp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/f8349a28-f09d-4712-b42a-0258429b5895)
 
-#Aquí te dejo unas reglas básicas de ESLint para React
+# Aquí te dejo unas reglas básicas de ESLint para React
 
 ```bash
 Reglas Básicas para React:
@@ -162,7 +162,7 @@ rules: {
 }
 ```
 
-#Evitar Anti-Patrones y Malas Prácticas
+# Evitar Anti-Patrones y Malas Prácticas
 
 ![homeroceb](https://github.com/OscarBGrandeG/style_guide/assets/98411972/be35d320-1aa0-4c64-8c8b-88f1552b64c9)
 
