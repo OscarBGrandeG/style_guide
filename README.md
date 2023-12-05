@@ -94,8 +94,6 @@ module.exports = {
 
 **Paso 5: Ejecutar ESLint**
 
-![elmoexp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/fa1a11b0-887b-4ed5-87cc-bbc956a7bfef)
-
 ```bash
 npm run lint
 o
@@ -108,8 +106,6 @@ yarn lint:fix
 ```
 
 #Aquí te dejo unas reglas básicas de ESLint para React
-
-![homeroceb](https://github.com/OscarBGrandeG/style_guide/assets/98411972/1e294081-9893-442b-b2c2-fddac8ef90be)
 
 ```bash
 Reglas Básicas para React:
@@ -166,8 +162,6 @@ rules: {
 ```
 
 #Evitar Anti-Patrones y Malas Prácticas
-
-![todobien](https://github.com/OscarBGrandeG/style_guide/assets/98411972/dc714d50-2d94-40d9-be68-204328a25954)
 
 ```bash
 Evitar el Uso Directo de setState en Funciones Asíncronas:
