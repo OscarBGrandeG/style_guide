@@ -4,7 +4,7 @@
 
 ESLint es una herramienta de linting para JavaScript que ayuda a identificar y corregir errores en el código, así como a aplicar y mantener un estilo de código consistente. A continuación, se explican algunos
 
-#Puntos clave sobre ESLint :point_down:
+## Puntos clave sobre ESLint :point_down:
 
 1. **Detección de Errores y Problemas de Estilo:**
 
@@ -53,9 +53,9 @@ ESLint es una herramienta de linting para JavaScript que ayuda a identificar y c
 
 En resumen, ESLint es una herramienta esencial ya que contribuye a la calidad del código al detectar errores, mantener la consistencia y mejorar la eficiencia del desarrollo.
 
-# Configuración de ESLint en Proyectos ReactJS
+## Configuración de ESLint en Proyectos ReactJS
 
-**Paso 1: Instalar ESLint
+**Paso 1: Instalar ESLint**
 
 Para instalar ESLint en tu proyecto, ejecuta el siguiente comando en la terminal:
 
@@ -99,14 +99,13 @@ npm run lint
 o
 yarn lint
 
-
 npm run lint:fix
-o
+o 
 yarn lint:fix
 ```
 ![elmoexp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/f8349a28-f09d-4712-b42a-0258429b5895)
 
-# Aquí te dejo unas reglas básicas de ESLint para React
+## Aquí te dejo unas reglas básicas de ESLint para React
 
 ```bash
 Reglas Básicas para React:
@@ -162,7 +161,7 @@ rules: {
 }
 ```
 
-# Evitar Anti-Patrones y Malas Prácticas
+## Evitar Anti-Patrones y Malas Prácticas
 
 ![homeroceb](https://github.com/OscarBGrandeG/style_guide/assets/98411972/be35d320-1aa0-4c64-8c8b-88f1552b64c9)
 
@@ -270,12 +269,12 @@ function MyComponent({ data }) {
    - Es una herramienta de formateo de código que ayuda a mantener la consistencia en la apariencia de tu código fuente. Su objetivo principal es formatear automáticamente el código de manera consistente según un conjunto de reglas predefinidas, lo que ayuda a un estadard sobre estilos de código y a mantener un código más limpio y legible.
 
    - Algunas características y usos comunes de Prettier incluyen:
-     1. Formateo Automático
-     2. Consistencia en Estilos de Código
-     3. Integración con Editores de Código
-     4. Admite Múltiples Lenguajes
-     5. Configuración Personalizable
-     6. Integración con Procesos de Construcción y CI/CD
+     - Formateo Automático
+     - Consistencia en Estilos de Código
+     - Integración con Editores de Código
+     - Admite Múltiples Lenguajes
+     - Configuración Personalizable
+     - Integración con Procesos de Construcción y CI/CD
 
     **Ejemplo**
 
@@ -312,7 +311,7 @@ function MyComponent({ data }) {
    - Husky: Es una herramienta que te permite configurar hooks de Git de manera fácil y estructurada. Se utiliza para ejecutar comprobaciones de calidad de código, pruebas, o cualquier tarea personalizada antes de que se confirme el código.
   
    - Lint-staged: Se utiliza en combinación con Husky para ejecutar tareas específicas, como el formateo de código o la ejecución de linters, solo en los archivos que se han modificado y se están preparando para hacer commit. Esto ayuda a mantener la consistencia y calidad del código que se envía al repositorio.
-  
+
    **Instalación**
 
    ```bash
@@ -323,8 +322,9 @@ function MyComponent({ data }) {
 
    **Ejemplo**
 
-   - Agrega configuración en tu package.json
    ```bash
+   Agrega configuración en tu package.json
+   
       "husky": {
         "hooks": {
           "pre-commit": "lint-staged"
@@ -458,4 +458,4 @@ function MyComponent({ data }) {
 
 # Material de apoyo (buena practicas)
 
-[Airbnb style guide] (https://github.com/airbnb/javascript)
+[Airbnb javascript](https://github.com/airbnb/javascripthttp:// "Airbnb javascript")
