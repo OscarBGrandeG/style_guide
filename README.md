@@ -2,52 +2,56 @@
 
 ## ESLint - ¿Qué es y por qué es importante?
 
-ESLint es una herramienta de linting para JavaScript que ayuda a identificar y corregir errores en el código, así como a aplicar y mantener un estilo de código consistente. A continuación, se explican algunos 
-
+ESLint es una herramienta de linting para JavaScript que ayuda a identificar y corregir errores en el código, así como a aplicar y mantener un estilo de código consistente. A continuación, se explican algunos
 
 #Puntos clave sobre ESLint :point_down:
 
 1. **Detección de Errores y Problemas de Estilo:**
+
    - ESLint analiza el código en busca de errores, problemas de estilo y posibles vulnerabilidades.
    - Ayuda a prevenir errores comunes antes de que lleguen a ejecutarse, mejorando la calidad del código.
-  
-      ![descarga](https://github.com/OscarBGrandeG/style_guide/assets/98411972/c20908e1-c84a-478c-a8b2-489a7369a0a8)
 
-3. **Consistencia en el Estilo de Código:**
+     ![descarga](https://github.com/OscarBGrandeG/style_guide/assets/98411972/c20908e1-c84a-478c-a8b2-489a7369a0a8)
+
+2. **Consistencia en el Estilo de Código:**
+
    - Define reglas y estándares de codificación que pueden adaptarse a las necesidades del equipo.
    - Facilita la creación de código consistente, independientemente del número de desarrolladores en el equipo.
 
-4. **Facilita la Colaboración:**
+3. **Facilita la Colaboración:**
+
    - Al seguir un conjunto común de reglas, ESLint facilita la colaboración entre miembros del equipo.
    - Reduce las discusiones sobre el estilo de código durante revisiones de código.
-  
-      ![peterp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/4eb3d5f5-cb4a-41f0-baea-670f8fc59078)
 
-5. **Mejora la Legibilidad del Código:**
+     ![peterp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/4eb3d5f5-cb4a-41f0-baea-670f8fc59078)
+
+4. **Mejora la Legibilidad del Código:**
+
    - Al identificar y corregir problemas de estilo, ESLint contribuye a mejorar la legibilidad del código.
    - Un código más legible facilita el mantenimiento y la comprensión del mismo.
-  
-      ![esoagueti](https://github.com/OscarBGrandeG/style_guide/assets/98411972/6343c700-34e0-4040-973c-ae2ed351b51b)
 
-6. **Aumenta la Eficiencia del Desarrollo:**
+     ![esoagueti](https://github.com/OscarBGrandeG/style_guide/assets/98411972/6343c700-34e0-4040-973c-ae2ed351b51b)
+
+5. **Aumenta la Eficiencia del Desarrollo:**
+
    - Detecta problemas de forma temprana, reduciendo la cantidad de errores que se pueden introducir en el código.
    - Mejora la eficiencia del desarrollo al proporcionar retroalimentación rápida sobre posibles problemas.
-  
+
      ![images](https://github.com/OscarBGrandeG/style_guide/assets/98411972/322311be-1827-474c-a752-a743989271db)
 
+6. **Configuración Personalizada:**
 
-7. **Configuración Personalizada:**
    - ESLint es altamente configurable, lo que permite a los equipos adaptar las reglas según las necesidades específicas del proyecto.
    - La configuración personalizada permite definir estándares de codificación específicos para un proyecto.
 
-8. **Integración con Herramientas de Desarrollo:**
+7. **Integración con Herramientas de Desarrollo:**
+
    - Puede integrarse fácilmente con herramientas de desarrollo y flujos de trabajo como editores de texto, IDEs y sistemas de integración continua (CI).
    - La integración en el flujo de trabajo mejora la coherencia y la eficiencia del desarrollo.
 
    ![images](https://github.com/OscarBGrandeG/style_guide/assets/98411972/2a61fa8a-e7a1-436d-b4c1-67aab6266b44)
 
 En resumen, ESLint es una herramienta esencial ya que contribuye a la calidad del código al detectar errores, mantener la consistencia y mejorar la eficiencia del desarrollo.
-
 
 # Configuración de ESLint en Proyectos ReactJS
 
@@ -90,6 +94,8 @@ module.exports = {
 
 **Paso 5: Ejecutar ESLint**
 
+![elmoexp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/fa1a11b0-887b-4ed5-87cc-bbc956a7bfef)
+
 ```bash
 npm run lint
 o
@@ -102,6 +108,8 @@ yarn lint:fix
 ```
 
 #Aquí te dejo unas reglas básicas de ESLint para React
+
+![homeroceb](https://github.com/OscarBGrandeG/style_guide/assets/98411972/1e294081-9893-442b-b2c2-fddac8ef90be)
 
 ```bash
 Reglas Básicas para React:
@@ -157,8 +165,9 @@ rules: {
 }
 ```
 
-
 #Evitar Anti-Patrones y Malas Prácticas
+
+![todobien](https://github.com/OscarBGrandeG/style_guide/assets/98411972/dc714d50-2d94-40d9-be68-204328a25954)
 
 ```bash
 Evitar el Uso Directo de setState en Funciones Asíncronas:
@@ -185,7 +194,6 @@ componentWillUnmount() {
   this._isMounted = false;
 }
 
-
 Evitar el Uso de index como Key en Listas:
 
 // Anti-patrón
@@ -204,7 +212,6 @@ Evitar el Uso de dangerouslySetInnerHTML:
 function MyComponent({ htmlContent }) {
   return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
 }
-
 
 // Mejor práctica
 function MyComponent({ htmlContent }) {
@@ -260,15 +267,48 @@ function MyComponent({ data }) {
 #Herramientas Adicionales
 
 1. **Prettier**
-   ```bash
-   npm install --save-dev prettier
-   o
-   yarn add --dev prettier
-   ```
-   - Te puedes apoyar del plugin que te proporciona Visual Studio Code
-      ![Captura de pantalla 2023-11-21 a la(s) 12 06 18](https://github.com/OscarBGrandeG/style_guide/assets/98411972/b805b044-7b3e-4d85-b0ed-d9f795caf81e)
 
-2. **Husky y lint-staged**
+   - Es una herramienta de formateo de código que ayuda a mantener la consistencia en la apariencia de tu código fuente. Su objetivo principal es formatear automáticamente el código de manera consistente según un conjunto de reglas predefinidas, lo que ayuda a un estadard sobre estilos de código y a mantener un código más limpio y legible.
+
+   - Algunas características y usos comunes de Prettier incluyen:
+     - 1. Formateo Automático
+     - 2. Consistencia en Estilos de Código
+     - 3. Integración con Editores de Código
+     - 4. Admite Múltiples Lenguajes
+     - 5. Configuración Personalizable
+     - 6. Integración con Procesos de Construcción y CI/CD
+
+   **Ejemplo**
+
+```bash
+{
+  "semi": false, // No añadir punto y coma al final de las declaraciones
+  "singleQuote": true, // Utilizar comillas simples en lugar de comillas dobles
+  "tabWidth": 4, // Tamaño de la tabulación
+  "useTabs": false, // Utilizar espacios en lugar de tabulaciones
+  "printWidth": 120, // Ancho máximo de línea
+  "arrowParens": "always", // Incluir paréntesis alrededor de los argumentos de las funciones de flecha
+  "bracketSpacing": true, // Añadir espacios alrededor de los corchetes en objetos
+  "jsxBracketSameLine": false, // Colocar el corchete de cierre JSX en una nueva línea
+  "jsxSingleQuote": false, // Utilizar comillas simples en JSX
+  "quoteProps": "as-needed", // Añadir comillas solo cuando sea necesario en los nombres de las propiedades de los objetos
+  "trailingComma": "all", // Añadir una coma al final de las listas y objetos
+  "endOfLine": "auto" // Utilizar saltos de línea UNIX o Windows automáticamente
+}
+```
+
+**Instalación**
+
+```bash
+  npm install --save-dev prettier
+  o
+  yarn add --dev prettier
+```
+
+- Te puedes apoyar del plugin que te proporciona Visual Studio Code
+  ![Captura de pantalla 2023-11-21 a la(s) 12 06 18](https://github.com/OscarBGrandeG/style_guide/assets/98411972/b805b044-7b3e-4d85-b0ed-d9f795caf81e)
+
+1. **Husky y lint-staged**
    ```bash
    npm install --save-dev husky lint-staged
    o
@@ -287,12 +327,126 @@ function MyComponent({ data }) {
         }
       }
    ```
-     
-3. **React DevTools**
+2. **React DevTools**
+
    - React DevTools es una extensión del navegador que te permite inspeccionar y depurar tus componentes React en el navegador (es una extensión de Chrome).
 
-4. **Jest**
-   -  Es un framework de prueba que se utiliza comúnmente en proyectos React. Se integra bien con React y proporciona funciones como pruebas unitarias, cobertura de código y pruebas de componentes.
+3. **Jest**
 
+   - Es un framework de prueba que se utiliza comúnmente en proyectos React. Se integra bien con React y proporciona funciones como pruebas unitarias, cobertura de código y pruebas de componentes.
 
+4. **VSCode setting.json**
 
+- El archivo settings.json es un archivo de configuración que te permite personalizar y ajustar diversos aspectos del entorno de desarrollo.
+
+```bash
+{
+  // =======================
+  // Apariencia y Comportamiento
+  // =======================
+  "tabnine.experimentalAutoImports": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "window.restoreFullscreen": true,
+  "workbench.editor.tabSizing": "shrink",
+  "breadcrumbs.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "editor.tabCompletion": "on",
+  "editor.cursorBlinking": "phase",
+  // =======================
+  // Búsqueda y Exclusión
+  // =======================
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.code-search": true,
+    "ios/": true,
+    "android/": true,
+    "dist/": true,
+    "yarn.lock": true,
+    "package-lock.json": true,
+    ".gitignore": true,
+    ".expo": true,
+    ".vscode": true
+  },
+  // =======================
+  // Prettier y Formateo
+  // =======================
+  "javascript.validate.enable": false,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
+  "prettier.proseWrap": "preserve",
+  "prettier.quoteProps": "as-needed",
+  "prettier.bracketSpacing": true,
+  "prettier.tabWidth": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // =======================
+  // Lenguajes Específicos
+  // =======================
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.banner": "never",
+  "emmet.includeLanguages": {
+    "typescript": "typescriptreact",
+    "javascript": "javascriptreact"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsserver.log": "off",
+  // =======================
+  // ESLint y Validación
+  // =======================
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+}
+```
+
+# Material de apoyo (buena practicas)
+
+[Airbnb style guide] (https://github.com/airbnb/javascript)
