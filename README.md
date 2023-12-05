@@ -104,6 +104,7 @@ npm run lint:fix
 o
 yarn lint:fix
 ```
+![elmoexp](https://github.com/OscarBGrandeG/style_guide/assets/98411972/f8349a28-f09d-4712-b42a-0258429b5895)
 
 #Aquí te dejo unas reglas básicas de ESLint para React
 
@@ -162,6 +163,8 @@ rules: {
 ```
 
 #Evitar Anti-Patrones y Malas Prácticas
+
+![homeroceb](https://github.com/OscarBGrandeG/style_guide/assets/98411972/be35d320-1aa0-4c64-8c8b-88f1552b64c9)
 
 ```bash
 Evitar el Uso Directo de setState en Funciones Asíncronas:
@@ -260,6 +263,8 @@ function MyComponent({ data }) {
 
 ##Herramientas Adicionales
 
+![homersino](https://github.com/OscarBGrandeG/style_guide/assets/98411972/8072e1b8-a63f-4198-8582-0e0e826573ce)
+
 1. **Prettier**
 
    - Es una herramienta de formateo de código que ayuda a mantener la consistencia en la apariencia de tu código fuente. Su objetivo principal es formatear automáticamente el código de manera consistente según un conjunto de reglas predefinidas, lo que ayuda a un estadard sobre estilos de código y a mantener un código más limpio y legible.
@@ -302,12 +307,22 @@ function MyComponent({ data }) {
 - Te puedes apoyar del plugin que te proporciona Visual Studio Code
   ![Captura de pantalla 2023-11-21 a la(s) 12 06 18](https://github.com/OscarBGrandeG/style_guide/assets/98411972/b805b044-7b3e-4d85-b0ed-d9f795caf81e)
 
-1. **Husky y lint-staged**
+2. **Husky y lint-staged**
+
+   - Husky: Es una herramienta que te permite configurar hooks de Git de manera fácil y estructurada. Se utiliza para ejecutar comprobaciones de calidad de código, pruebas, o cualquier tarea personalizada antes de que se confirme el código.
+  
+   - Lint-staged: Se utiliza en combinación con Husky para ejecutar tareas específicas, como el formateo de código o la ejecución de linters, solo en los archivos que se han modificado y se están preparando para hacer commit. Esto ayuda a mantener la consistencia y calidad del código que se envía al repositorio.
+  
+   **Instalación**
+
    ```bash
    npm install --save-dev husky lint-staged
    o
    yarn add --dev husky lint-staged
    ```
+
+   **Ejemplo**
+
    - Agrega configuración en tu package.json
    ```bash
       "husky": {
@@ -321,15 +336,15 @@ function MyComponent({ data }) {
         }
       }
    ```
-2. **React DevTools**
+4. **React DevTools**
 
    - React DevTools es una extensión del navegador que te permite inspeccionar y depurar tus componentes React en el navegador (es una extensión de Chrome).
 
-3. **Jest**
+5. **Jest**
 
    - Es un framework de prueba que se utiliza comúnmente en proyectos React. Se integra bien con React y proporciona funciones como pruebas unitarias, cobertura de código y pruebas de componentes.
 
-4. **VSCode setting.json**
+6. **VSCode setting.json**
 
    - El archivo settings.json es un archivo de configuración que te permite personalizar y ajustar diversos aspectos del entorno de desarrollo.
 
