@@ -90,7 +90,7 @@ module.exports = {
 
 - Instala la extensión ESLint para tu editor de código.
 
-![Captura de pantalla 2023-11-21 a la(s) 11 41 55](https://github.com/OscarBGrandeG/style_guide/assets/98411972/ce14718e-5c2f-47a8-b2e7-bbd57e36076f)
+   ![Captura de pantalla 2023-11-21 a la(s) 11 41 55](https://github.com/OscarBGrandeG/style_guide/assets/98411972/ce14718e-5c2f-47a8-b2e7-bbd57e36076f)
 
 **Paso 5: Ejecutar ESLint**
 
@@ -258,19 +258,19 @@ function MyComponent({ data }) {
 }
 ```
 
-#Herramientas Adicionales
+##Herramientas Adicionales
 
 1. **Prettier**
 
    - Es una herramienta de formateo de código que ayuda a mantener la consistencia en la apariencia de tu código fuente. Su objetivo principal es formatear automáticamente el código de manera consistente según un conjunto de reglas predefinidas, lo que ayuda a un estadard sobre estilos de código y a mantener un código más limpio y legible.
 
    - Algunas características y usos comunes de Prettier incluyen:
-     - 1. Formateo Automático
-     - 2. Consistencia en Estilos de Código
-     - 3. Integración con Editores de Código
-     - 4. Admite Múltiples Lenguajes
-     - 5. Configuración Personalizable
-     - 6. Integración con Procesos de Construcción y CI/CD
+     1. Formateo Automático
+     2. Consistencia en Estilos de Código
+     3. Integración con Editores de Código
+     4. Admite Múltiples Lenguajes
+     5. Configuración Personalizable
+     6. Integración con Procesos de Construcción y CI/CD
 
     **Ejemplo**
 
